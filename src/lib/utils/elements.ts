@@ -212,7 +212,7 @@ export const getTransitionProperty = (options?: Transition): string => {
 
 export const getRenderStageStyles = (nextStyles: Options, currentStyles: Style): Style => {
 	const { translate3d = 0 } = nextStyles || {};
-	const transform = `translate3d(${-translate3d}px, 0, 0)`;
+	const transform = `translate3d(${-translate3d+300}px, 0, 0)`;
 
 	return { ...currentStyles, transform };
 };
